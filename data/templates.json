@@ -1,0 +1,16 @@
+[
+    {
+        "nombre": "Campus Moderno",
+        "descripcion": "Diseño educativo moderno y adaptable.",
+        "imagen": "assets/img/ibero.jpg",
+        "demo": "templates/campus-moderno/",
+        "precio": "$"
+    },
+    {
+        "nombre": "MAR LMS",
+        "descripcion": "Con Progreso de Visualización, colapsables y banners",
+        "imagen": "assets/img/mar.jpg",
+        "demo": "templates/mar/index.html",
+        "precio": ""
+    }
+]

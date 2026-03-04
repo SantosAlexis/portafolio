@@ -1,0 +1,403 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/SantosAlexis/webthemes@main/mar/css/estilos_marV2.css" />
+            -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/SantosAlexis/webthemes@main/mar/css/estilo_mar_compatibilidad.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/SantosAlexis/webthemes@main/mar/css/estilos_mar.css" />
+        <!--  <link rel="stylesheet" href="../../../Externos/Smart/mar/mar/css/estilos_mar.css" />-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://campus.smartmba.online/theme/yui_combo.php?rollup/3.18.1/yui-moodlesimple-min.css" />
+        <style>
+            .mar_demo_reset {
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 12px;
+            }
+
+            .mar_reset_button {
+                font-size: 14px;
+                padding: 6px 14px;
+                border-radius: 20px;
+                cursor: pointer;
+                background: #f1f5f9;
+                color: #334155;
+                transition: all 0.2s ease;
+                border: 1px solid #e2e8f0;
+                user-select: none;
+            }
+
+            .mar_reset_button:hover {
+                background: #e2e8f0;
+            }
+
+            .mar_reset_button:active {
+                transform: scale(0.97);
+            }
+        </style>
+        <!--
+        <style>
+            .mar_videoWrapper,
+            .mar_geniallyWrapper {
+                width: 80%;
+                margin: auto;
+                max-width: 800px;
+            }
+
+            .mar_videoRatio,
+            .mar_geniallyRatio {
+                position: relative;
+                padding-top: 56.25%;
+                overflow: hidden;
+            }
+
+            .mar_videoRatio iframe,
+            .mar_geniallyRatio iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 0;
+            }
+
+            .mar_pdfFrame {
+                width: 100%;
+                height: 600px;
+                border: 0;
+            }
+
+            .mar_imageFrame {
+                max-width: 100%;
+                height: auto;
+                display: block;
+                margin: auto;
+            }
+
+            @media (max-width: 768px) {
+                .mar_videoWrapper {
+                    width: 100%;
+                    margin: auto;
+                    max-width: 750px;
+                }
+
+                
+            }
+        </style>
+        -->
+
+        <title>Tabs Dinámicos</title>
+    </head>
+    <body>
+        <div class="mar_layout mar_theme_custom">
+            <!-- NAV -->
+            <div class="mar_sidebar">
+                <div class="mar_nav_mobile">
+                    <div class="mar_nav_btn mar_prev">◀</div>
+                    <div class="mar_nav_title"></div>
+                    <div class="mar_nav_btn mar_next">▶</div>
+                </div>
+
+                <ul class="mar_nav">
+                    <li class="mar_nav_item mar_active">Bienvenida</li>
+                    <li class="mar_nav_item">Fundamentos</li>
+                    <li class="mar_nav_item">Aplicación</li>
+                    <li class="mar_nav_item">Profundización</li>
+                    <li class="mar_nav_item">Cierre</li>
+                </ul>
+            </div>
+
+            <!-- CONTENT -->
+            <div class="mar_content">
+                <!-- TAB 1 -->
+                <div class="mar_tab mar_active">
+                    <div class="mar_bannerM">
+                        <img
+                            class="img-fluid"
+                            src="https://placehold.co/1200x200/1e293b/ffffff?text=Bienvenida+al+Curso"
+                            alt="banner demo" />
+                    </div>
+
+                    <h3>Bienvenido a la experiencia de aprendizaje</h3>
+
+                    <p>
+                        Este template está diseñado para ofrecer una experiencia estructurada, clara y moderna dentro de
+                        Moodle. Combina navegación intuitiva, contenido interactivo y seguimiento de progreso en tiempo
+                        real.
+                    </p>
+
+                    <p>En esta demostración podrás explorar:</p>
+
+                    <ul>
+                        <li>Organización por módulos y subtemas.</li>
+                        <li>Integración de video y recursos interactivos.</li>
+                        <li>Actividades aplicadas con diseño atractivo.</li>
+                        <li>Sistema de seguimiento de contenido visto.</li>
+                    </ul>
+
+                    <div class="mar_dynamicFrame">
+                        <a href="https://www.youtube.com/watch?v=jNQXAC9IVRw" target="_blank">
+                            Ver video demostrativo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- TAB 2 -->
+                <div class="mar_tab">
+                    <div class="mar_bannerM">
+                        <img
+                            class="img-fluid"
+                            src="https://placehold.co/1200x200/0f172a/ffffff?text=Fundamentos"
+                            alt="banner fundamentos" />
+                    </div>
+
+                    <p>
+                        En esta sección presentamos cómo se organizan los contenidos dentro del template, permitiendo
+                        dividir cada módulo en subtemas desplegables.
+                    </p>
+
+                    <div class="mar_subtopics">
+                        <div class="mar_subtopic">
+                            <div class="mar_subtopic_header">
+                                <span>Contenido en formato video</span>
+                                <span class="mar_subtopic_icon">+</span>
+                            </div>
+                            <div class="mar_subtopic_body">
+                                <p>
+                                    El template permite integrar videos externos o internos manteniendo una presentación
+                                    limpia y profesional.
+                                </p>
+                                <div class="mar_dynamicFrame">
+                                    <a href="https://drive.google.com/file/d/1-MC5MCCnom0kbPZqCz6jvLsfjNLDLcoG/preview"
+                                        >video
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mar_subtopic">
+                            <div class="mar_subtopic_header">
+                                <span>Recursos interactivos</span>
+                                <span class="mar_subtopic_icon">+</span>
+                            </div>
+                            <div class="mar_subtopic_body">
+                                <p>
+                                    Compatible con herramientas externas como Genially, H5P y recursos incrustados
+                                    dinámicamente.
+                                </p>
+                                <div class="mar_dynamicFrame">
+                                    <a href="https://view.genially.com/654e1c0a6025080011b85c62" target="_blank"
+                                        >genially</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mar_subtopic mar_subtopic_activity_block">
+                            <div class="mar_subtopic_header mar_subtopic_activity">
+                                <span>Actividad práctica</span>
+                                <span class="mar_subtopic_icon">
+                                    <img
+                                        src="https://cdn-icons-png.flaticon.com/512/4185/4185714.png"
+                                        alt="icon actividad" />
+                                </span>
+                            </div>
+                            <div class="mar_subtopic_body">
+                                <h2 style="text-align: center">Momento de aplicar</h2>
+
+                                <p>
+                                    El diseño incluye tarjetas de actividad con llamada a la acción clara, listas para
+                                    vincular a quizzes, tareas o evaluaciones en Moodle.
+                                </p>
+
+                                <div class="mar_activity_card mar_dynamicLink">
+                                    <a href="https://h5p.org/h5p/embed/1466205" target="_blank">actividad</a>
+
+                                    <div class="mar_activity_icon">
+                                        <img
+                                            src="https://cdn-icons-png.flaticon.com/512/8635/8635833.png"
+                                            alt="icon quiz" />
+                                    </div>
+
+                                    <div class="mar_activity_content">
+                                        <h4>Actividad · Caso práctico</h4>
+                                        <p>Evaluación tipo cuestionario integrada con diseño personalizado.</p>
+
+                                        <span class="mar_activity_cta"> Ir a la actividad → </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 3 -->
+                <div class="mar_tab">
+                    <div class="mar_bannerM">
+                        <img
+                            class="img-fluid"
+                            src="https://placehold.co/1200x200/111827/ffffff?text=Aplicacion"
+                            alt="banner aplicacion" />
+                    </div>
+
+                    <p>
+                        El template está optimizado para navegación en escritorio y móvil. El sistema de progreso
+                        registra automáticamente el contenido visitado en cada sección.<br />
+                        Visualiza tus archivos sin necesidad de descargarlos
+                    </p>
+
+                    <div class="mar_dynamicFrame">
+                        <a
+                            href="https://cuaed.unam.mx/publicaciones/libro-formacion-docente-universidades/pdf/Cap-26-Formacion-Docente-en-las-Universidades.pdf"
+                            target="_blank"
+                            >pdf</a
+                        >
+                    </div>
+                </div>
+                <!-- TAB 4 -->
+                <div class="mar_tab">
+                    <div class="mar_bannerM">
+                        <img
+                            class="img-fluid"
+                            src="https://placehold.co/1200x200/111827/ffffff?text=Profundización"
+                            alt="banner aplicacion" />
+                    </div>
+
+                    <p>
+                        Podrás embeber videos desde Youtube.<br />El sistema de progreso registra automáticamente el
+                        contenido visitado en cada sección.
+                    </p>
+
+                    <div class="mar_dynamicFrame">
+                        <a href="https://www.youtube.com/embed/R3GfuzLMPkA" target="_blank">video</a>
+                    </div>
+                </div>
+
+                <!-- TAB 5 -->
+                <div class="mar_tab">
+                    <h3 style="text-align: center">Gracias por explorar el template</h3>
+
+                    <p>
+                        Esta es una versión demo pensada para mostrar la estructura, flexibilidad y experiencia visual
+                        del diseño.
+                    </p>
+
+                    <p>
+                        El contenido es totalmente editable y adaptable a cualquier tipo de curso corporativo o
+                        académico.
+                    </p>
+                </div>
+            </div>
+
+            <!-- PROGRESS -->
+            <div class="mar_bottom">
+                <!--<div class="mar_demo_reset">
+                    <div class="mar_reset_button" role="button" tabindex="0">Reiniciar progreso de demostración</div>
+                </div>-->
+                <div class="mar_progress">
+                    <div class="mar_progress_bar">
+                        <span class="mar_progress_fill">.</span>
+                    </div>
+
+                    <div class="mar_progress_info">
+                        <span class="mar_progress_label">0% contenido explorado</span>
+
+                        <span class="mar_info_icon filterPink" tabindex="0">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/SantosAlexis/webthemes@main/mar/icon/informacion.svg"
+                                alt="icon info" />
+                        </span>
+
+                        <div class="mar_info_tooltip">
+                            Este indicador muestra el porcentaje del contenido de esta unidad que ha sido visitado. No
+                            representa una calificación ni finalización oficial del curso.
+                        </div>
+                    </div>
+                    <span class="mar_subtopic_icon filterPink" tabindex="0">
+                        <img
+                            class="mar_reset_button2"
+                            src="https://cdn-icons-png.flaticon.com/512/2618/2618245.png"
+                            alt="icon info" />
+                    </span>
+                </div>
+
+                <br />
+                <hr class="mar_buttomline" />
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/gh/SantosAlexis/webthemes@main/mar/js/mar_all.v3.js"></script>
+        <!--<script src="https://cdn.jsdelivr.net/gh/SantosAlexis/webthemes@main/mar/js/mar_progress.js"></script>-->
+        <script src="https://cdn.jsdelivr.net/gh/SantosAlexis/webthemes@main/mar/js/mar_compatibilida_Edwise.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/SantosAlexis/webthemes@main/mar/js/mar_dynamicLinks.js"></script>
+        <!--
+        <script src="../mar/mar/js/mar_all.v2.js"></script>
+        
+        <script src="../mar/mar/js/mar_compatibilida_Edwise.js"></script>
+        -->
+        <script src="https://cdn.jsdelivr.net/gh/SantosAlexis/webthemes@main/mar/js/mar_progress.v1.js"></script>
+        <script>
+            (function () {
+                "use strict";
+
+                function resetMarProgress() {
+                    try {
+                        if (!window.localStorage) return;
+
+                        Object.keys(localStorage)
+                            .filter(function (key) {
+                                return key.startsWith("mar_");
+                            })
+                            .forEach(function (key) {
+                                localStorage.removeItem(key);
+                            });
+
+                        console.log("localStorage mar_ limpiado");
+
+                        // Reiniciar barra visual si existe
+                        var fill = document.querySelector(".mar_progress_fill");
+                        var label = document.querySelector(".mar_progress_label");
+
+                        if (fill) {
+                            fill.style.width = "0%";
+                        }
+
+                        if (label) {
+                            label.textContent = "0% contenido explorado";
+                        }
+
+                        // Opcional: recargar después de 500ms
+                        setTimeout(function () {
+                            location.reload();
+                        }, 500);
+                    } catch (e) {
+                        console.warn("Error al reiniciar progreso", e);
+                    }
+                }
+
+                function bindResetButton() {
+                    var btn = document.querySelector(".mar_reset_button2");
+                    if (!btn) return;
+
+                    btn.addEventListener("click", resetMarProgress);
+
+                    btn.addEventListener("keydown", function (e) {
+                        if (e.key === "Enter") {
+                            resetMarProgress();
+                        }
+                    });
+                }
+
+                document.addEventListener("DOMContentLoaded", bindResetButton);
+            })();
+        </script>
+    </body>
+</html>
